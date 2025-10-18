@@ -1,4 +1,4 @@
-// Variables
+// переменные 
 $primary-color: #ff6b6b;
 $secondary-color: #667eea;
 $gradient: linear-gradient(135deg, $secondary-color 0%, #764ba2 100%);
@@ -10,7 +10,7 @@ $bg-gray: #f1f3f5;
 $shadow: 0 2px 10px rgba(0,0,0,0.1);
 $transition: all 0.3s ease;
 
-// Mixins
+// сами миксиены
 @mixin flex-center {
   display: flex;
   justify-content: center;
@@ -40,8 +40,7 @@ $transition: all 0.3s ease;
     @media (max-width: 480px) { @content; }
   }
 }
-
-// Base styles
+// база для страницы 
 * {
   margin: 0;
   padding: 0;
@@ -61,7 +60,7 @@ body {
   padding: 0 20px;
 }
 
-// Navigation
+// стили навигации 
 .navbar {
   background: $bg-white;
   box-shadow: $shadow;
@@ -103,8 +102,6 @@ body {
     }
   }
 }
-
-// Hero section
 .hero {
   background: $gradient;
   color: $bg-white;
@@ -142,8 +139,6 @@ body {
     }
   }
 }
-
-// Features section
 .features {
   padding: 100px 0;
   background: $bg-white;
@@ -184,8 +179,6 @@ body {
     }
   }
 }
-
-// Services section
 .services {
   padding: 100px 0;
   background: $bg-gray;
@@ -220,8 +213,6 @@ body {
     }
   }
 }
-
-// Footer
 .footer {
   background: $text-dark;
   color: $bg-white;
@@ -249,8 +240,6 @@ body {
     }
   }
 }
-
-// Responsive design
 @include responsive(tablet) {
   .nav-menu {
     gap: 1rem !important;
